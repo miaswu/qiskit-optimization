@@ -15,7 +15,7 @@ from typing import List, Optional, Union, cast
 
 import numpy as np
 from qiskit.quantum_info import SparsePauliOp
-from qiskit_algorithms import (
+from qiskit_algorithms import ( # <-- we should remove any dependency to qiskit_algorithms (copy what is needed)
     NumPyMinimumEigensolver,
     NumPyMinimumEigensolverResult,
     SamplingMinimumEigensolver,
